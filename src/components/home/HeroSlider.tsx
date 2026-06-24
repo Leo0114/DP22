@@ -52,7 +52,7 @@ export default function HeroSlider({
                 loading={i === 0 ? "eager" : "lazy"}
                 fetchPriority={i === 0 ? "high" : "auto"}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0a111f]/85 via-[#0a111f]/40 to-[#0a111f]/30" />
+              <div className="absolute inset-0 bg-linear-to-t from-[#0a111f]/85 via-[#0a111f]/40 to-[#0a111f]/30" />
             </div>
           </SwiperSlide>
         ))}
@@ -72,8 +72,8 @@ export default function HeroSlider({
                 active === 1
                   ? "mr-auto items-start text-left"
                   : active === 2
-                  ? "ml-auto items-end text-right"
-                  : "mx-auto items-center text-center"
+                    ? "ml-auto items-end text-right"
+                    : "mx-auto items-center text-center"
               }`}
             >
               <span className="text-xs font-medium uppercase tracking-[0.3em] text-secondary">
@@ -91,8 +91,8 @@ export default function HeroSlider({
                   active === 1
                     ? "justify-start"
                     : active === 2
-                    ? "justify-end"
-                    : "justify-center"
+                      ? "justify-end"
+                      : "justify-center"
                 }`}
               >
                 <a

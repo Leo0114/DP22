@@ -6,11 +6,7 @@ import Layout from "@/layouts/Layout.astro";
 import Gallery from "@/components/gallery/Gallery.astro";
 import ContactForm from "@/components/contact/ContactForm";
 import { contact } from "@/constants/contact";
-import {
-  typeLabels,
-  statusMeta,
-  formatPrice,
-} from "@/constants/propiedades";
+import { typeLabels, statusMeta, formatPrice } from "@/constants/propiedades";
 
 const { slug } = Astro.params;
 const entry = slug ? await getEntry("propiedades", slug) : undefined;
@@ -96,7 +92,7 @@ const specs = [
         alt={data.name}
         width={1600}
         height={900}
-        class="aspect-[16/9] w-full object-cover"
+        class="aspect-video w-full object-cover"
         transition:name={`prop-img-${id}`}
       />
     </div>
@@ -180,7 +176,9 @@ const specs = [
 
       <!-- Sticky contact aside -->
       <aside class="lg:col-span-1">
-        <div class="sticky top-24 rounded-3xl border border-line bg-panel p-6 md:p-7">
+        <div
+          class="sticky top-24 rounded-3xl border border-line bg-panel p-6 md:p-7"
+        >
           <h2 class="font-display text-2xl font-medium text-ink">
             ¿Te interesa esta propiedad?
           </h2>

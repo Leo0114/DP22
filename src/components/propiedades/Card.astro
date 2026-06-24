@@ -2,11 +2,7 @@
 import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 import { FiMapPin } from "react-icons/fi";
-import {
-  typeLabels,
-  statusMeta,
-  formatPrice,
-} from "@/constants/propiedades";
+import { typeLabels, statusMeta, formatPrice } from "@/constants/propiedades";
 
 interface Props {
   entry: CollectionEntry<"propiedades">;
@@ -23,7 +19,7 @@ const status = statusMeta[data.status];
   href={`/propiedades/${id}`}
   class="group flex flex-col overflow-hidden rounded-2xl border border-line bg-panel transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5"
 >
-  <div class="relative aspect-[4/3] overflow-hidden">
+  <div class="relative aspect-4/3 overflow-hidden">
     <Image
       src={data.Image}
       alt={data.name}
