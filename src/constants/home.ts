@@ -1,4 +1,4 @@
-import { Images } from "@/constants/images";
+import { Images, PropertiesImages } from "@/constants/images";
 
 export interface HeroSlide {
   src: string;
@@ -22,14 +22,12 @@ export const heroSlides: HeroSlide[] = [
   {
     src: Images[2].image.src,
     title: "Confianza construida con detalle",
-    subtitle:
-      "Acompañamos cada etapa con transparencia y compromiso real.",
+    subtitle: "Acompañamos cada etapa con transparencia y compromiso real.",
   },
   {
     src: Images[3].image.src,
     title: "Tu patrimonio, nuestro propósito",
-    subtitle:
-      "Desarrollos con alto potencial de plusvalía y rentabilidad.",
+    subtitle: "Desarrollos con alto potencial de plusvalía y rentabilidad.",
   },
 ];
 
@@ -102,3 +100,24 @@ export const homeCta = {
   secondaryLabel: "Ver propiedades",
   secondaryHref: "/propiedades",
 };
+
+export const desarrollos = [
+  {
+    title: "Media Luna Residencial",
+    image: PropertiesImages[0],
+    description:
+      "En Media Luna Residencial encontrarás lotes residenciales listos para construir tu hogar ideal.",
+  },
+  {
+    title: "Punta del Huajuco Residencial",
+    image: PropertiesImages[1],
+    description:
+      "En Punta del Huajuco Residencial encontrarás lotes residenciales listos para construir tu hogar ideal.",
+  },
+  {
+    title: "Capanna Residencial",
+    image: PropertiesImages[2],
+    description:
+      "En Capanna Residencial encontrarás lotes residenciales listos para construir tu hogar ideal.",
+  },
+];
