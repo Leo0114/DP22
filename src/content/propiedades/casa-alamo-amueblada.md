@@ -4,7 +4,7 @@ Image: ../images/5.avif
 description: "Casa amueblada lista para vivir con 4 recámaras, 3 baños, 6 paneles solares y cochera para 2 autos a 450 mts de la carretera nacional."
 type: "casa"
 status: "disponible"
-price: 5650000
+price: 5650.000
 location: "El Álamo, N.L."
 size: 300
 bedrooms: 4
